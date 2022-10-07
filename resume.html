@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div.mm{
+            margin-top: 100px;
+            margin-left: 150px;
+            margin-right: 150px;
+        }
+        div.rr{
+            margin-left: 150px;
+            margin-right: 150px;
+        }
+        h4.no{
+            text-align:right;
+            text-decoration:underline;
+        }
+        h3.name {
+            background-color: darkcyan;
+            padding: 0.7em;
+            
+        }
+        .photo{
+            border:5x solid;
+            border-radius:50%;
+            height: 200px;
+            width: 200px;
+            margin-left: 150px;
+            margin-top: 80px;
+
+        }
+        table,th,td,tr{
+            border: 2px solid;
+            border-collapse: collapse;
+        }
+        section{
+            background-color: rgba(245, 225, 205, 0.822);
+            margin-left: 150px;
+            margin-right: 150px;
+        }
+        header{
+            text-align: center;
+            font-size:xx-large;
+            color: black;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>RESUME</header>
+    <div class="mm">
+    <section>
+        <img class="photo" src="data:image/jpeg;base64,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"
+            alt="">
+            <div class="rr">
+            <h4 class="no"></i><a href="tel:9787541026">9787541026</a> <br>
+                <a href="mailto:sindhujasindhu267@gmail.com">sindhujasindhu267@gmail.com</a></h4>
+    <h3 class="name">SINDHUJA R<br></h3>
+    <h3>
+    <font size="4" color="bink">OBJECTIVE</font>
+    </h3>
+    <p><span>To achieve a position in on esteemed organization wherein I can put my knowledge and skills in practice
+            for the development of the organization and give myself a chance to face new challenge & develop an ever
+            learning atmosphere around me.</span></p>
+    <hr>
+    <h3>
+    <font size="4" color="bink">ACADAMIC ACHIEVEMENTS</font>
+    </h3>
+    <ul>
+        <li>
+            <p><b>ESSAY WRITING</b></p>
+        </li>
+        <P>secured 2nd place</P>
+    </ul>
+    <hr>
+
+    <h3>
+        <font size="4" color="bink"> SKILLS</font>
+    </h3>
+    <ul>
+        <li>python</li>
+        <li>javascript</li>
+        <li>Git&Github</li>
+        <li>Html</li>
+        <li>Css</li>
+    </ul>
+    <hr>
+    <h3>
+        <font size="4" color="bink">EDUCATION DETAILS</font>
+    </h3>
+    <table>
+        <th>COURSE</th>
+        <th>INSTITUTION</th>
+        <th >BOARD UNIVERSITY</th>
+        <th >PERCENTAGE/CGPA</th>
+        <tr>
+            <td>BE-ECE</td>
+            <td>Anna University Regional Campus,Madurai</td>
+            <td>Anna University</td>
+            <td>8.25</td>
+
+        </tr>
+        <tr>
+            <td>HSC</td>
+            <td>Kmsc Girls Hr Sec School</td>
+            <td>state board</td>
+            <td>71.7</td>
+        </tr>
+        <tr>
+            <td>SSLC</td>
+            <td>Kmsc Girls Hr Sec School</td>
+            <td>state board</td>
+            <td>88.8</td>
+        </tr>
+    </table>
+    <hr>
+    <h3>
+        <font size="4" color="bink">TRAINING PROJECT</font>
+    </h3>
+    <ul>
+        <li>3 Bills Problem: calculating who owes how much money to whom after the split payments.</li>
+
+        <li>Round Robin: scheduling matches between teams in such a way that every team gets an opportunity to play with
+            other teams, and no 2 teams face other again.</li>
+
+        <li>Version Control: Calculating total number of published versions, along with highest contributing authors
+            towards publishing of app updates, as well as sorting the publishing versions based on number of bugs the
+            particular version has fixed.</li>
+
+    </ul>
+    <hr>
+    <h3>
+        <font size="4" color="bink">GITHUB</font>
+    </h3>
+    <a href="https://github.com/Sneharajen/sindhuja">https://github.com/Sneharajen/sindhuja</a>
+    
+    <hr>
+    <h3>
+        <font size="4" color="bink">FINAL YEAR PROJECT</font>
+    </h3>
+    <span style="font-size:15px;"><b >TITLE:&nbsp;</b></span>
+    <span style="font-size:13px;">IDENTIFYING THE INSECTS BY EVALUATING THE AFFECTED PLACE IMAGE OF THE HUMAN BODY USING CNN ALGORITHM</span>
+    <hr>
+    <h3>
+    <font size="4" color="bink">AREA OF INTEREST</font>
+    </h3>
+    <ul>
+        <li>Web Development</li>
+        <li>fullstack developer</li>
+    </ul>
+
+    <hr>
+    <h3>
+        <font size="4" color="bink">PERSONAL DETAILS</font>
+    </h3>
+    <span style="font-size:15px;"><b>FATHER'S NAME :&nbsp; </b></span>
+    <span>K.V.Rajendran</span>
+    <br>
+    <span style="font-size:15px;"><b>MARITAL STATUS :&nbsp; </b></span>
+    <span>single</span>
+    <br>
+    <span style="font-size:15px;"><b>GENDER :&nbsp;</b></span>
+    <span>female</span>
+    <br>
+    <span style="font-size:15px;"><b>LANGUAGE KNOWN :&nbsp; </b></span>
+    <span>Tamil,English</span>
+</section>
+</div>
+</div>
+</body>
+</html>
